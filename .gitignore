@@ -1,6 +1,7 @@
-
 *.txt
 *.o
 *.cmi
 *.cmx
 *exe*
+*.pyc
+__pycache__
