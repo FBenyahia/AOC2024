@@ -8,26 +8,17 @@ with open("input.txt", 'r') as f:
         l1.append(int(line[0]))
         l2.append(int(line[1]))
 k = 0
-l1.sort()
-l2.sort()
-for i in range(len(l1)):
-    k+= abs(l1[i] - l2[i])
+l1Sorted = l1 + []
+l2Sorted = l2 + []
+l1Sorted.sort()
+l2Sorted.sort()
+for i in range(len(l1Sorted)):
+    k+= abs(l1Sorted[i] - l2Sorted[i])
 
 print(k)
 
 
 #Part 2
-
-l1 = []
-l2 = []
-
-with open("input.txt", 'r') as f:
-    for line in f:
-        line = line.split('  ')
-        line[1] = line[1][1:-1]
-        l1.append(int(line[0]))
-        l2.append(int(line[1]))
-
 k=0
 for i in range(len(l1)):
     r=0
