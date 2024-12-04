@@ -1,5 +1,10 @@
 l1 = []
 l2 = []
+from utils import get_input
+
+s = get_input(3)
+print(s)
+"""
 with open("input.txt", 'r') as f:
     for line in f:
         print(line)
@@ -27,3 +32,4 @@ for i in range(len(l1)):
             r+=1
     k+=l1[i]*r
 print(k)
+"""
